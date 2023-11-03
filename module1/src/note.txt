@@ -1,0 +1,4 @@
+ts-node-dev npm package for run typescript file
+
+npm i -g ts-node-dev //for global installation
+ts-node-dev --respawn --transpile-only server.ts // for run file, change server.ts with filename with path
