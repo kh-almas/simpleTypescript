@@ -7,3 +7,5 @@ const user = {
     company: 'TiggzyIT',
     position: 'ReactJS Developer'
 };
+user.phone = 987654321;
+// user.position = '' // can not set value in readonly
