@@ -12,7 +12,7 @@
             permanent: '',
         }
     };
-    const { id, name: { firstName, lastName }, phone: contact, //phone is rename by 'contact'
+    const { id, name: { firstName, lastName }, phone: contact, //phone is rename by 'contact'. this is alias
     address: { present, permanent } } = userInfo;
     console.log(firstName);
     console.log(contact);
