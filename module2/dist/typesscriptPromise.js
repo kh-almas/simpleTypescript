@@ -20,22 +20,20 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     //             console.log(data);
     //         })
     // }
-    // const getTodo = async () => {
-    //     try {
-    //         const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
-    //
-    //         if (!response.ok) {
-    //             throw new Error(`HTTP error! Status: ${response.status}`);
-    //         }
-    //
-    //         const data = await response.json();
-    //         console.log(data);
-    //     } catch (error) {
-    //         console.error('Error fetching data:', error.message);
-    //     }
-    // };
-    //
-    // getTodo();
+    const getTodo = () => __awaiter(void 0, void 0, void 0, function* () {
+        try {
+            const response = yield fetch('https://jsonplaceholder.typicode.com/todos/1');
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            const data = yield response.json();
+            console.log(data);
+        }
+        catch (error) {
+            console.error('Error fetching data:', error);
+        }
+    });
+    getTodo();
     //simulate
     const createPromise = () => {
         return new Promise((resolve, reject) => {
